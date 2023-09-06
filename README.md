@@ -15,7 +15,7 @@
 <section>
   <h1>How to access data</h1>
   <ol>
-    <li><a href="api">Using API</a></li>
+    <li><a href=".DB">Using API</a></li>
     <li>Using DB File</li>
   </ol>
 </section>
@@ -23,7 +23,7 @@
 <br>
 
 <section class="api">
-  <h1>Api Documentation</h1>
+  <h1>API Documentation</h1>
   <br><br>
   <h2>Response type</h2>
   
@@ -65,9 +65,14 @@
   <h2>Request Type</h2>
   Use <strong>GET</strong> method to request queries.
 
+  <br>
+  <pre>
+  Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php</pre>
+
+  <br>
   <h3>Parameters</h3>
-<br>
-<table border>
+  <br>
+  <table border>
   <tr>
     <th>Parameter</th>
     <th>Description</th>  
@@ -88,8 +93,8 @@
     <td>This is a sub filter. You can get Cities a District</td>  
   </tr>
 
-</table>  
-<br>
+  </table>  
+  <br>
   <h3>Get all Provinces, Districts, Cities</h3>
 
   <pre><code>
@@ -145,4 +150,16 @@ https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuw
   
 
 </section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<DB>
+
+  <h1>DB File Documentation</h1>
+  <br><br>
+</DB>
 
