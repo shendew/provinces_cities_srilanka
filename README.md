@@ -1,11 +1,11 @@
 
   <h1>Provinces, Districts, Cities in Sri-Lanka</h1>
   <h2>(Database & API)</h2>
-  <br>
-  <br>
-  <h2>Developer</h2>
+  
+ 
+ 
 
-![user](https://github.com/shendew/provinces_cities_srilanka/assets/63788101/b79c9e6e-b823-4d37-9ac3-ce415888c273)
+
 
 <blockquote>by Shehara Dewanagala</blockquote>
 
@@ -13,7 +13,7 @@
 <br>
 
 <section>
-  <h2>How to access data</h2>
+  <h1>How to access data</h1>
   <ol>
     <li><a href="api">Using API</a></li>
     <li>Using DB File</li>
@@ -40,7 +40,7 @@
         "ProvinceTitle_si":"\u0db8\u0db0\u0dca\u200d\u0dba\u0db8",
         "ProvinceTitle_ta":"",
         "ProvincialCapital":"Kandy",
-        "ProvincialFlag":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/9\/96\/Flag_of_the_Central_Province_%28Sri_Lanka%29.PNG",
+        "ProvincialFlag":"central.PNG",
         "ProvinceEST":"1 October 1833",
         "LandArea":"5674",
         "Population":"2571557"
@@ -51,7 +51,7 @@
         "ProvinceTitle_si":"",
         "ProvinceTitle_ta":"",
         "ProvincialCapital":"Trincomalee",
-        "ProvincialFlag":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/d\/dd\/Eastern_Province_Flag_%28SRI_LANKA%29.png\/255px-Eastern_Province_Flag_%28SRI_LANKA%29.png",
+        "ProvincialFlag":"eastern.png",
         "ProvinceEST":"1 October 1833",
         "LandArea":"9996",
         "Population":"1555510"
@@ -62,8 +62,87 @@
 </section>
 
 <section>
-  <h3>DB File Documentation</h3>
+  <h2>Request Type</h2>
+  Use <strong>GET</strong> method to request queries.
+
+  <h3>Parameters</h3>
+<br>
+<table border>
+  <tr>
+    <th>Parameter</th>
+    <th>Description</th>  
+  </tr>
+
+  <tr>
+    <td>Query</td>
+    <td>Without filter you can get direct data like all provinces and also you can use with a filter</td>  
+  </tr>
+  
+  <tr>
+    <td>Province</td>
+    <td>This is the main filter. You can get Districts and cities under a Province</td>  
+  </tr>
+
+  <tr>
+    <td>District</td>
+    <td>This is a sub filter. You can get Cities a District</td>  
+  </tr>
+
+</table>  
+<br>
+  <h3>Get all Provinces, Districts, Cities</h3>
+
+  <pre><code>
+    <blockquote>
+    query=provinces
+    </blockquote>
+
+    <blockquote>
+https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?query=provinces
+    </blockquote>
+  </code></pre>
+
+
+
+  <h3>Get all Districs in a Province</h3>
+
+  <pre><code>
+    <blockquote>
+    province=Sabaragamuwa & query=districts
+    </blockquote>
+
+    <blockquote>
+https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=districts
+    </blockquote>
+  </code></pre>
+
+
+  <h3>Get all Cities in a District</h3>
+
+  <pre><code>
+    <blockquote>
+    district=Kegalle & query=cities
+    </blockquote>
+
+    <blockquote>
+https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=Kegalle&query=cities
+    </blockquote>
+  </code></pre>
+
+
+<h3>Get all Cities in a Province</h3>
+
+  <pre><code>
+    <blockquote>
+    province=Sabaragamuwa & query=cities
+    </blockquote>
+
+    <blockquote>
+https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=cities
+    </blockquote>
+  </code></pre>
+
+  
 
 </section>
 
-![me](https://github.com/shendew/provinces_cities_srilanka/assets/63788101/db7b7d0e-845e-4950-b038-52dba470f7b0)
