@@ -1,35 +1,29 @@
 
-  <h1>Provinces, Districts, Cities in Sri-Lanka</h1>
-  <h2>(Database & API)</h2>
-  
- 
- 
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
 
+# Provinces, Districts, Cities in Sri-Lanka (Database & API)
 
-<blockquote>by Shehara Dewanagala</blockquote>
+A brief description of what this project does and who it's for
 
-<br>
-<br>
 
-<section>
-  <h1>How to access data</h1>
-  <ol>
-    <li><a href=".DB">Using API</a></li>
-    <li>Using DB File</li>
-  </ol>
-</section>
+## Authors
 
-<br>
+- [@Shehara Dewanagala](https://www.github.com/shendew)
 
-<section class="api">
-  <h1>API Documentation</h1>
-  <br><br>
-  <h2>Response type</h2>
-  
-  Response in a JSON Object and the first items is showing the response status. If response is success it status will send as "1", Othewise as "0".
-  
-  <pre><code>Response
+## How to use Data
+* Using APIs
+* Using DB File
+
+
+#                        API Documentation
+
+## Response Type
+Response in a JSON Object and the first items is showing the response status. If response is success it status will send as "1", Othewise as "0".
+
+
+```
+Response
 
     {
     "status":"1",
@@ -57,109 +51,59 @@
         "Population":"1555510"
       }]
     }
-    
-  </code></pre>
-</section>
 
-<section>
-  <h2>Request Type</h2>
-  Use <strong>GET</strong> method to request queries.
+```
 
-  <br>
-  <pre>
-  Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php</pre>
+## Request Type
+Use GET method to request queries.
 
-  <br>
-  <h3>Parameters</h3>
-  <br>
-  <table border>
-  <tr>
-    <th>Parameter</th>
-    <th>Description</th>  
-  </tr>
-
-  <tr>
-    <td>Query</td>
-    <td>Without filter you can get direct data like all provinces and also you can use with a filter</td>  
-  </tr>
-  
-  <tr>
-    <td>Province</td>
-    <td>This is the main filter. You can get Districts and cities under a Province</td>  
-  </tr>
-
-  <tr>
-    <td>District</td>
-    <td>This is a sub filter. You can get Cities a District</td>  
-  </tr>
-
-  </table>  
-  <br>
-  <h3>Get all Provinces, Districts, Cities</h3>
-
-  <pre><code>
-    <blockquote>
-    query=provinces
-    </blockquote>
-
-    <blockquote>
-https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?query=provinces
-    </blockquote>
-  </code></pre>
+```
+Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php
+```
 
 
-
-  <h3>Get all Districs in a Province</h3>
-
-  <pre><code>
-    <blockquote>
-    province=Sabaragamuwa & query=districts
-    </blockquote>
-
-    <blockquote>
-https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=districts
-    </blockquote>
-  </code></pre>
+| Parameter | Description |
+| ------ | ----------- |
+| Query   | Without filter you can get direct data like all provinces and also you can use with a filter |
+| Province | This is the main filter. You can get Districts and cities under a Province |
+| District | This is a sub filter. You can get Cities a District |
 
 
-  <h3>Get all Cities in a District</h3>
+### Get all Provinces, Districts, Cities
 
-  <pre><code>
-    <blockquote>
-    district=Kegalle & query=cities
-    </blockquote>
+```
+query=provinces
 
-    <blockquote>
-https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=Kegalle&query=cities
-    </blockquote>
-  </code></pre>
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?query=provinces
+```
+
+### Get all Districs in a Province
+
+```
+province=Sabaragamuwa & query=districts
+
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=districts
+```
+
+### Get all Cities in a District
+
+```
+district=Kegalle & query=cities
+
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=Kegalle&query=cities
+```
+
+### Get all Cities in a Province
+
+```
+province=Sabaragamuwa & query=cities
+
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=cities
+```
 
 
-<h3>Get all Cities in a Province</h3>
 
-  <pre><code>
-    <blockquote>
-    province=Sabaragamuwa & query=cities
-    </blockquote>
-
-    <blockquote>
-https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=cities
-    </blockquote>
-  </code></pre>
-
-  
-
-</section>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<DB>
-
-  <h1>DB File Documentation</h1>
-  <br><br>
-</DB>
+# DB Documentation
+## 🚀 About Me
+I'm a full stack developer...
 
