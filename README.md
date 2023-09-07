@@ -11,6 +11,14 @@ A brief description of what this project does and who it's for
 
 - [@Shehara Dewanagala](https://www.github.com/shendew)
 
+
+## Features
+
+- All Provinces,Districts Details
+- API System
+- DB File
+- Filter Districts and cities
+
 ## How to use Data
 * Using APIs
 * Using DB File
@@ -104,6 +112,49 @@ province=Sabaragamuwa & query=cities
 
 
 # DB Documentation
-## 🚀 About Me
-I'm a full stack developer...
+
+## Table Syntax 
+
+**Province table syntax**
+
+![Province Table](https://apis.thedevsl.com/ProvincesCitiesSrilanka/assests/tb_province.png)
+\
+\
+\
+**Districts table syntax**
+
+![Districts Table](https://apis.thedevsl.com/ProvincesCitiesSrilanka/assests/tb_disct.png)
+\
+\
+\
+**Cities table syntax**
+
+![Cities Table](https://apis.thedevsl.com/ProvincesCitiesSrilanka/assests/tb_disct.png)
+
+
+## Queries
+
+### Select Database
+```
+    Use Database "thedevsl_provinces_cities_api"
+```
+
+### Get All Provinces
+```
+    "Select * from Provinces"
+```
+
+
+### Get All Districts
+```
+    "Select * from Districts"
+```
+
+### Get All Cities
+```
+    "Select * from Cities"
+
+```
+## 🚀 About Dev
+I'm a Mobile And Web Deveoper.
 
