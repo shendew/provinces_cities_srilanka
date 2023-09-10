@@ -1,8 +1,9 @@
 
+
 ![Logo](https://apis.thedevsl.com/ProvincesCitiesSrilanka/assests/logo.png)
 
 
-# Provinces, Districts, Cities in Sri-Lanka (Database & API)
+# Provinces, Districts,Divisions/Cities in Sri-Lanka (Database & API)
 
 This Repo includes all Provinces, Districts and Cities in Sri-Lanka.You can use this Database through this API and Database File. You can get a Idea about this API and DB File using Documentation below there.
 
@@ -14,10 +15,17 @@ This Repo includes all Provinces, Districts and Cities in Sri-Lanka.You can use 
 
 ## Features
 
-- All Provinces,Districts Details
+- All Provinces,Districts,Divisions,Cities Details
 - API System
 - DB File
-- Filter Districts and cities
+- Filter Districts, Divisions and Cities
+
+```mermaid
+graph LR
+A(Provinces : 9)  --> B(Districts : 25) --> C(Divisions/Cities : 331 ) --> D(Sub Cities : Updating )
+
+
+```
 
 ## How to use Data
 * Using APIs
@@ -74,18 +82,20 @@ Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php
 | ------ | ----------- |
 | query   | Without filter you can get direct data like all provinces and also you can use with a filter |
 | province | This is the main filter. You can get Districts and cities under a Province |
-| district | This is a sub filter. You can get Cities a District |
+| district | This is a sub filter. You can get Divisions/Cities in a District |
+| city | Using this subfilter you can get Sub Cities in a Division/City|
+
 
 
 ### Get all Provinces, Districts, Cities
 
 ```
-query=provinces
+query=provinces,query=districts,query=cities,query=sub_cities
 
     https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?query=provinces
 ```
 
-### Get all Districs in a Province
+### Get all Districts in a Province
 
 ```
 province=Sabaragamuwa & query=districts
@@ -93,7 +103,7 @@ province=Sabaragamuwa & query=districts
     https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=districts
 ```
 
-### Get all Cities in a District
+### Get all Cities/Divisions in a District
 
 ```
 district=Kegalle & query=cities
@@ -101,12 +111,36 @@ district=Kegalle & query=cities
     https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=Kegalle&query=cities
 ```
 
-### Get all Cities in a Province
+### Get all Cities/Divisions in a Province
 
 ```
 province=Sabaragamuwa & query=cities
 
     https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=cities
+```
+
+### Get all Sub Cities in a City/Division
+
+```
+city=kegalle & query=sub_cities
+
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?city=kegalle&query=sub_cities
+```
+
+### Get all Sub Cities in a District
+
+```
+district=kegalle & query=sub_cities
+
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=kegalle&query=sub_cities
+```
+
+### Get all Sub Cities in a Province
+
+```
+province=Sabaragamuwa & query=sub_cities
+
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=kegalle&query=sub_cities
 ```
 
 
@@ -129,7 +163,7 @@ province=Sabaragamuwa & query=cities
 \
 **Cities table syntax**
 
-![Cities Table](https://apis.thedevsl.com/ProvincesCitiesSrilanka/assests/tb_disct.png)
+![Cities Table](https://apis.thedevsl.com/ProvincesCitiesSrilanka/assests/cities.png)
 
 
 ## Queries
@@ -139,11 +173,12 @@ province=Sabaragamuwa & query=cities
     Use Database "thedevsl_provinces_cities_api"
 ```
 
-### Get All Provinces, Districts, Cities
+### Get All Provinces, Districts, Cities, SubCities
 ```
     "Select * from Provinces"
     "Select * from Districts"
     "Select * from Cities"
+    "Select * from SubCities"
 ```
 
 
@@ -153,13 +188,13 @@ province=Sabaragamuwa & query=cities
     ProvinceID= (Select ProvinceID from Provinces where ProvinceTitle=='__province__')
 ```
 
-### Get All Cities in a District
+### Get All Cities/Divisions in a District
 ```
     Select * from Cities where 
     DistrictID=(Select DistrictID from Districts where DistrictTitle_en='__district__')
 ```
 
-### Get All Cities in a Province
+### Get All Cities/Divisions in a Province
 ```
     Select * from Cities 
     where DistrictID = (
