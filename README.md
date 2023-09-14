@@ -74,7 +74,7 @@ Response
 Use **GET** method to request queries.
 
 ```
-Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php
+Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php
 ```
 
 
@@ -92,7 +92,7 @@ Base url : https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php
 ```
 query=provinces,query=districts,query=cities,query=sub_cities
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?query=provinces
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?query=provinces
 ```
 
 ### Get all Districts in a Province
@@ -100,7 +100,7 @@ query=provinces,query=districts,query=cities,query=sub_cities
 ```
 province=Sabaragamuwa & query=districts
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=districts
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?province=Sabaragamuwa&query=districts
 ```
 
 ### Get all Cities/Divisions in a District
@@ -108,7 +108,7 @@ province=Sabaragamuwa & query=districts
 ```
 district=Kegalle & query=cities
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=Kegalle&query=cities
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?district=Kegalle&query=cities
 ```
 
 ### Get all Cities/Divisions in a Province
@@ -116,7 +116,7 @@ district=Kegalle & query=cities
 ```
 province=Sabaragamuwa & query=cities
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?province=Sabaragamuwa&query=cities
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?province=Sabaragamuwa&query=cities
 ```
 
 ### Get all Sub Cities in a City/Division
@@ -124,7 +124,7 @@ province=Sabaragamuwa & query=cities
 ```
 city=kegalle & query=sub_cities
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?city=kegalle&query=sub_cities
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?city=kegalle&query=sub_cities
 ```
 
 ### Get all Sub Cities in a District
@@ -132,7 +132,7 @@ city=kegalle & query=sub_cities
 ```
 district=kegalle & query=sub_cities
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=kegalle&query=sub_cities
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?district=kegalle&query=sub_cities
 ```
 
 ### Get all Sub Cities in a Province
@@ -140,7 +140,7 @@ district=kegalle & query=sub_cities
 ```
 province=Sabaragamuwa & query=sub_cities
 
-    https://apis.thedevsl.com/ProvincesCitiesSrilanka/index.php?district=kegalle&query=sub_cities
+    https://apis.thedevsl.com/ProvincesCitiesSrilanka/api.php?district=kegalle&query=sub_cities
 ```
 
 
